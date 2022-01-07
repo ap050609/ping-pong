@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+
+    
+    <title>The Motion Controlled Ping Pong Game</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  </head>
+  <body style="font-family: 'Press Start 2P', cursive; background-color: red; color: greenyellow;">
+    <center>
+      <header>
+        <div>
+          <h4>The Motion Controlled Ping Pong Game</h4>
+          <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Instructions</button>
+        </div>
+        <br>
+        <br>
+      </header>
+      <br>
+      <button class="btn btn-primary" onclick="start()" id="start">Start Game</button>
+      <br>
+      <br>
+      <button class="btn btn-primary" onclick="restart()" id="restart">Restart Game</button>
+      <br>
+      <br>
+      <h3 id="status" class="btn btn-success"></h3>
+      <br>
+      <br>
+      <div id="canvas"></div>
+      <br>
+      <br>
+      <div id="myModal" class="modal fade">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button class="close" data-dismiss="modal">&times;</button>
+              <h4>Instructions</h4>
+            </div>
+
+            <div class="modal-body">
+              <h2>Move 3-4 feet away</h2>
+              <br>
+              <br>
+              <h2>Raise your right wrist</h2>
+              <br>
+              <br>
+              <h2>When a red dot is visible on your right wrist, proceed to start</h2>
+              <br>
+              <br>
+              <h2>The red paddle visible post starting is your paddle. You have to prevent the ball from going to your side using your paddles</h2>
+              <br>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <p>Author: Arjun Aniruddha Patel with help of WhitehatJr</p>
+        <br><br>
+        <p>Based on the original Ping Pong game</p>
+        <br><br>
+      </footer>
+      <br>
+      <br>
+      </center>
+   </body>
+</html>
